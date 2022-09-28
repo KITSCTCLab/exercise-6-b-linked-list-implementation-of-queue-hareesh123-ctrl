@@ -34,7 +34,7 @@ class Queue:
   def status(self) -> None:
     if front  == None:
       print("the queue is empty")
-      return
+    return
     p = front
     while(p!=None):
       print(p.data)
