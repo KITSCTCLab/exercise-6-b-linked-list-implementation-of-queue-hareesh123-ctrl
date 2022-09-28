@@ -28,7 +28,7 @@ class Queue:
     else:
       element = front.data
       front = front.next
-     return element
+    return element
    
 
   def status(self) -> None:
