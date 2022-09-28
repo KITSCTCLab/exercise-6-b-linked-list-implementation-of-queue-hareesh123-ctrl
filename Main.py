@@ -10,13 +10,35 @@ class Queue:
     self.last = None
 
   def enqueue(self, data) -> None:
-    # Write your code here
+    Newnode = Node(data)
+    if front == None and rear == None:
+      front = Newnode
+      rear = Newnode
+    else:
+      rear->next = Newnode
+      rear = Newnode
+    
 
   def dequeue(self) -> None:
-    # Write your code here
+    if front == None:
+      print("the queue is empty")
+    elif front == rear:
+      element = front.data
+      front = rear = None
+    else:
+      element = front.data
+      front = front.next
+     return element
+   
 
   def status(self) -> None:
-    # Write your code here
+    if front  == None:
+      print("the queue is empty")
+      return
+    p = front
+    while(p!=None):
+      print(p.data)
+      p = p.next
 
 
 # Do not change the following code
