@@ -15,7 +15,7 @@ class Queue:
       front = Newnode
       rear = Newnode
     else:
-      rear->next = Newnode
+      rear.next = Newnode
       rear = Newnode
     
 
